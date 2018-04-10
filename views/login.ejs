@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
+	<title>Login page</title>
+	<link rel="stylesheet" href="/css/bootstrap.css">
+	<style>
+		form{
+			margin-top: 110px;
+		}
+		body{
+			background-image: url(/images/login.jpg);
+		}
+		label{
+			color: white;
+			font-size: 1.5em;
+		}
+		.form-control{
+			border-radius: 55px;
+			color: grey;
+		    transition: border-color ease-in-out .10s, box-shadow ease-in-out .15s;
+		}
+/*		#btn{
+			margin-left: 19px;
+		}
+		#btn1{
+			margin-left: 127px
+		}
+*/
+		/* Smartphones (portrait and landscape) ----------- */
+		@media only screen 
+		and (min-device-width : 320px) 
+		and (max-device-width : 480px) {
+		/* Styles */
+		}
+
+		/* Smartphones (landscape) ----------- */
+		@media only screen 
+		and (min-width : 321px) {
+		/* Styles */
+		#btn{
+			margin-left: 15px;
+		}
+		#btn1{
+			margin-left: 70px;
+		}
+		}
+
+		/* Smartphones (portrait) ----------- */
+		@media only screen 
+		and (max-width : 320px) {
+		/* Styles */
+
+		}
+
+		/* iPads (portrait and landscape) ----------- */
+		@media only screen 
+		and (min-device-width : 480px) 
+		and (max-device-width : 1024px) {
+		/* Styles */
+		#btn{
+			margin-left: 15px;
+		}
+		#btn1{
+			margin-left: 110px;
+		}
+		}
+
+		/* iPads (portrait) ----------- */
+		@media only screen 
+		and (min-device-width : 768px) 
+		and (max-device-width : 1024px) 
+		and (orientation : portrait) {
+		/* Styles */
+		#btn{
+			margin-left: 10px;
+		}
+		}
+
+		/* Desktops and laptops ----------- */
+		@media only screen 
+		and (min-width : 1224px) {
+		/* Styles */
+		#btn{
+			margin-left: 19px;
+		}
+		#btn1{
+			margin-left: 127px;
+		}
+		}
+
+		/* Large screens ----------- */
+		@media only screen 
+		and (min-width : 1824px) {
+		/* Styles */
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4"></div>
+			<div class="col-sm-4">
+				<form action="">
+				<label for="uname">Username :</label>
+				<input type="text" class="form-control"><br>
+				<label for="uname">Password :</label>
+				<input type="password" class="form-control"><br>
+				<input id="btn" type="submit" class="btn btn-primary btn-lg" value="Submit"> 
+				<input id="btn1" type="submit" class="btn btn-danger btn-lg" value="Register"> 
+				</form>
+			</div>
+			<div class="col-sm-4"></div>
+		</div>
+	</div>
+	<script src="/js/bootstrap.js"></script>
+	<script src="/js/jquery.js"></script>
+</body>
+</html>

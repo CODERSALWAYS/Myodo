@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>nodejs</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/css/bootstrap.css">
+  </head>
+  <body>
+    <div class="container">
+    	<div class="row">
+    		<div class="col-sm-6">
+    			<form action="/addlistdata" method="post">	
+    			<table class="table">
+    				<th>Todo-list</th>
+    				<tr>
+    					<td>Messages</td></br>
+    					<td><textarea class="form-control" name="msg" id="msg" cols="30" rows="10"></textarea></td>
+    				</tr><br>
+    				<td><input type="submit" class="btn btn-danger" value="submit"></td>
+    			</table></form>
+    		</div>
+    		<div class="col-sm-6">
+                <table class="table">
+                    <th>Todo--list</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                    <% for (var i=0; i < data.length; i++) {%>
+                    <tr>
+                        <td><%= data[i].message %></td>
+
+                        <td>
+                            <a href="/update?updateid=<%= data[i].mid%>"><span class="glyphicon glyphicon-pencil"></span></a></td>
+
+                        <td>
+                            <a href="/delete?deleteid=<%= data[i].mid%>"><span class="glyphicon glyphicon-trash"></span></a>
+                        </td>
+                    </tr>
+                    <% } %>
+                </table>
+    			
+    		</div>
+    	</div>
+    </div>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/jquery.js"></script>
+  </body>
+</html>
